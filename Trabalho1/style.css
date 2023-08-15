@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fdfdfd;
+}
+
+body{
+    background-color: #1A2126;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pagina{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-pagina{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+.escolha-time-block{
+    display: flex;
+    justify-content: space-around;
+    max-width: 1000px;
+}
+
+label{
+    display: block;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.area-jogo{
+    background-color: #178F1B;
+    height: 300px;
+    max-width: 800px;
+    margin-top: 20px;
+    border: 7px solid #fdfdfd;
+    border-radius: 3px;
+    box-shadow: 5px 5px 5px 5px #0000002c;
+}
+
+.botao-confirmar{
+    margin-top: 35px;
+    width: 100px;
+}
+
+input{
+    color: #1A2126;
+    padding: 5px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    align-items: center;
+}
+
+.area-jogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
