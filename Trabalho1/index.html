@@ -19,35 +19,34 @@
     <div class="container pagina">
         <h1 class="titulo-pagina">CAMPEONATO!</h1>
         <h2>Escolha os times:</h2>
-        <form onsubmit="validador()" id="form">
+        <form id="form">
             <h4>Digite apenas letras</h3>
                 <div class="escolha-time-block container">
                     <div class="label-input-block" id="label1">
                         <label for="time1">Time 1</label>
                         <div>
-                            <input type="text" name="time1" id="time1" pattern="[a-zA-Z\s]+">
-                            <input type="color" name="time1cor" id="time1cor" class="color-input">
+                            <input type="text" name="time1" id="time1" pattern="[a-zA-Z\s]+" required>
+                            <input type="color" name="time1cor" id="time1cor" class="color-input" >
                         </div>
                     </div>
                     <div class="label-input-block" id="label2">
                         <label for="time2">Time 2</label>
                         <div>
-
-                            <input type="text" name="time2" id="time2" pattern="[a-zA-Z\s]+">
-                            <input type="color" name="time2cor" id="time2cor" class="color-input">
+                            <input type="text" name="time2" id="time2" pattern="[a-zA-Z\s]+" required>
+                            <input type="color" name="time2cor" id="time2cor" class="color-input" >
                         </div>
                     </div>
                     <div class="label-input-block" id="label3">
                         <label for="time3">Time 3</label>
                         <div>
-                            <input type="text" name="time3" id="time3" pattern="[a-zA-Z\s]+">
-                            <input type="color" name="time3cor" id="time3cor" class="color-input">
+                            <input type="text" name="time3" id="time3" pattern="[a-zA-Z\s]+" required>
+                            <input type="color" name="time3cor" id="time3cor" class="color-input" >
                         </div>
                     </div>
                     <div class="label-input-block" id="label4">
                         <label for="time4">Time 4</label>
                         <div>
-                            <input type="text" name="time4" id="time4" pattern="[a-zA-Z\s]+">
+                            <input type="text" name="time4" id="time4" pattern="[a-zA-Z\s]+" required>
                             <input type="color" name="time4cor" id="time4cor" class="color-input">
                         </div>
                     </div>
