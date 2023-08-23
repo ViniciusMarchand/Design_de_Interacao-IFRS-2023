@@ -17,11 +17,13 @@
 </head>
 
 <body>
-    <div class="container pagina" id="pagina">
-        <h1 class="titulo-pagina">CAMPEONATO!</h1>
-        <h2>Escolha os times:</h2>
+    <div class="pagina" id="pagina">
+        <div id="pagina-titulo-block">
+            <h1 class="titulo-pagina">CAMPEONATO!</h1>
+            <h2>Escolha os times:</h2>
+        </div>
         <form id="form">
-            <h4>Digite apenas letras</h3>
+            <h3>Digite apenas letras</h3>
                 <div class="escolha-time-block container">
                     <div class="label-input-block" id="label1">
                         <label for="time1">Time 1</label>
@@ -60,36 +62,7 @@
         </div>
     </div>
     <br>
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        disputa de pênaltis
-    </button>
-      
-      <!-- Modal -->
-      <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Disputa de pênaltis!</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div>
-                    <label for="">teste1</label>
-                    <input type="number" name="" id="" placeholder="gols" id="time1-semi-final">
-                </div>
-                <div>
-                    <label for="">teste2</label>
-                    <input type="number" name="" id="" placeholder="gols" id="time2-semi-final">
-                </div>
-            </div>
-            <div class="modal-footer">
-                
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-              <button type="button" class="btn btn-primary" onclick="resultadoSemiFinalVerificacao('1','2')">resultado</button>
-            </div>
-          </div>
-        </div>
-      </div> -->
+    <div id="liveAlertPlaceholder"></div>
 
 </body>
 
