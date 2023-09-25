@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --cor-primaria: #2C2C54;
+    --cor-secundaria: #474787;
+    --cor-auxiliar: #AAABB8;
+    --cor-fonte: #ECECEC;
+    --cor-botao: #b955b9;
+}
+body{
+    background-color: var(--cor-primaria)!important;
+    padding-bottom: 50px;
+}
+.container{
+    background-color: var(--cor-primaria);
+    display: flex;
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container h1{
+    color: var(--cor-fonte);
+}
+
+.escolha-num-participantes-block, .jogos-block, .resultados-block{
+    width: 100%;
+    min-height: 100px;
+    background-color: var(--cor-secundaria);
+    margin-top: 50px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px ;
+    padding: 20px 40px;
+}
+.escolha-num-participantes-block h2, .jogos-block h2, .resultados-block h2{
+    color: var(--cor-fonte);
+}
+
+.escolha-num-participantes-block input[type="number"]{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--cor-fonte);
+    width: 60px;
+    text-align: center;
+    color: var(--cor-fonte);
+    font-size: 18px;
+}
+
+.escolha-num-participantes-block input:focus{
+    outline: 0;
+}
+.jogadores-nomes{
+    display: flex;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+.centralizar-conteudo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.label-nome{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 10px 10px;
+}
+
+.label-nome label{
+    color: var(--cor-fonte);
+}
+
+input[type="text"]{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--cor-fonte);
+    color: var(--cor-fonte);
+    text-align: center;
+    margin-top: 5px;
+}
+
+.botao{
+    border: none;
+    background: rgb(185,85,185);
+    background: linear-gradient(180deg, rgba(185,85,185,1) 25%, rgba(97,45,97,1) 100%);
+    border-radius: 10px;
+    padding: 6px;
+    color: var(--cor-fonte);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.342);
+    margin: 10px 10px 0px 10px;
+
+}
+
+.botao:hover{
+    background: rgb(185,85,185);
+    background: linear-gradient(180deg, rgb(141, 60, 141) 25%, rgba(97,45,97,1) 100%);
+}
+
+.jogos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.partida{
+    width: 250px;
+    height: 150px;
+    background-color: var(--cor-primaria);
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.363);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.partida h3{
+    color: var(--cor-fonte);
+}
+
+.partida h4{
+    color: var(--cor-fonte);
+}
+
+.boteos-pontos{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.botao-partida{
+    width: 100px;
+}
+
+@media(max-width: 900px){
+    .label-nome{
+        width: 100%;
+    }
+}
