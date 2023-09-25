@@ -68,7 +68,6 @@ function criarJogos() {
                 jogos.push(new Jogo(jogadores[i], jogadores[j], 0));
             }
         }
-        console.warn('AQUI')
 
         quantidadeJogos = jogos.length;
 
@@ -82,6 +81,14 @@ function criarJogos() {
     isSaved = false;
     localStorage.setItem('jogoSalvo', true);
     localStorage.setItem('quantidadeJogos', JSON.stringify(quantidadeJogos));
+
+
+    document.getElementById('boteos-aux').innerHTML = `
+    <input type="button" value="Reiniciar" class="botao" onclick="reiniciar()">
+    <button type="button" class="btn btn-primary botao" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="mostrarPontos()">
+        Mostrar Pontos
+    </button>
+    `
 }
 
 if (localStorage.getItem('jogoSalvo') == 'true' && isSaved) {
@@ -165,8 +172,8 @@ function mostrarResultado() {
             contadorNumEmpate++;
         }
     }
-    jogadores = [...jogadoresAux]
     if (contadorNumEmpate > 1) {
+        jogadores = [...jogadoresAux]
         isSaved = false;
         localStorage.clear();
         document.getElementById('jogos').innerHTML = ""
@@ -196,11 +203,24 @@ if (quantidadeJogos == 0) {
     mostrarResultado()
 }
 
+function mostrarPontos(){
+    const modalBody = document.getElementById('mostrar-pontos');
+    modalBody.innerHTML = "";
+    for (const key in jogadores) {
+        modalBody.innerHTML +=`
+        <li>Nome: ${jogadores[key].getNome()} Pontos: ${jogadores[key].getPontos()}</li>
+
+        `
+
+    }
+}
 
 function reiniciar() {
     localStorage.clear();
     location.reload();
 }
+
+window.mostrarPontos = mostrarPontos
 window.reiniciar = reiniciar
 window.vencedorDireito = vencedorDireito
 window.vencedorEsquerdo = vencedorEsquerdo
