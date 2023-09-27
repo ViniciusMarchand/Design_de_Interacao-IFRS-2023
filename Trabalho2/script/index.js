@@ -205,13 +205,15 @@ if (quantidadeJogos == 0) {
 
 function mostrarPontos(){
     const modalBody = document.getElementById('mostrar-pontos');
+
+    const jogadoresOrdenado = [...jogadores];
+    jogadoresOrdenado.sort((a,b) => a.pontos - b.pontos)
     modalBody.innerHTML = "";
-    for (const key in jogadores) {
+    for (let i = jogadoresOrdenado.length -1; i>= 0; i--) {
         modalBody.innerHTML +=`
-        <li>Nome: ${jogadores[key].getNome()} Pontos: ${jogadores[key].getPontos()}</li>
+        <li>Nome: ${jogadoresOrdenado[i].getNome()} | Pontos: ${jogadoresOrdenado[i].getPontos()}</li>
 
         `
-
     }
 }
 
