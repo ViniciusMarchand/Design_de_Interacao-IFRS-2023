@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" href="../ico/notebook.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="pagina">
+        <div class="bloco">
+            <h1>Utilidade pública</h1>
+            <h2>Feriados nacionais em 2023</h2>
+
+            <ul id="lista-feriados">
+
+            </ul>
+
+            <h2>Previsão São Borjas</h2>
+            <p>Data da previsão: <span id="data-prev"></span></p>
+            <p>Temperatura mínima e máxima: <span id="temp-min"></span> - <span id="temp-max"></span></p>
+            <p>Descrição: <span id="descricao"></span></p>
+
+            <h2>Código IBGE de Rio Grande (RS)</h2>
+            <h3 id="cod-rg"></h3>
+
+            <form action="" id="meuForm" name="meuForm" >
+                <div>
+                    <div>
+                        <label>Qual o seu CEP?</label>
+                        <input type="text" name="cep" id="cep" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label>Qual o seu DDD?</label>
+                        <input type="text" name="dddtel" id="dddtel" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label>Qual a sigla do seu Estado?</label>
+                        <input type="text" name="sigla" id="sigla" required>
+                    </div>
+
+                </div>
+                <button type="submit">Confirmar</button>
+            </form>
+            <div id="resultado">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
