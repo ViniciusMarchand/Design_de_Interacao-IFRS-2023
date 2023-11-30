@@ -6,3 +6,6 @@
 <div>
  Trabalho2: https://viniciusmarchand.github.io/Design_de_Interacao-IFRS-2023/Trabalho2/index.html
 </div>
+<div>
+ Trabalho3: https://viniciusmarchand.github.io/Design_de_Interacao-IFRS-2023/Trabalho3/index/index.html
+</div>
