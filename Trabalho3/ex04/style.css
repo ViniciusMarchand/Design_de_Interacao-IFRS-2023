@@ -5,12 +5,12 @@
 }
 
 body{
-    background-color: lightblue;
+    background-color: lightblue!important;
 }
 
 .pagina {
     width: 100%;
-    height: 90vh;
+    min-height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,7 +18,7 @@ body{
 
 .bloco {
     background-color: white;
-    width: 500px;
+    width: 900px;
     min-height: 300px;
     border-radius: 5px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.263);
@@ -33,4 +33,21 @@ body{
     text-align: center;
 }
 
+#meuForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#meuForm button {
+    margin-top: 10px;
+    width: 80px;
+}
+
+button {
+    margin-top: 20px!important;
+    padding: 5px;
+    border-radius: 5px!important;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.292);
+}
 
